@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: ;
+
+}
+
+#menu-bar{
+    position: absolute;
+}
+
+#menu {
+
+    width: 35px;
+    height: 35px;
+    margin: 30px 0 14px 25px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+
+}
+
+.navb li a {
+    color: chocolate;
+    text-decoration: none
+}
+
+.navb li {
+    list-style: none;
+    padding: 17px 0;
+}
+
+.navb li a:hover {
+    font-weight: bold;
+}
+
+.navb {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.change .bar {
+    background-color: azure;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-5px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+
+
+
+
+
+.map img {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    height: 350px;
+    width: 500px;
+}
+
+.beaches-header {
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(40, 160, 196, 0.37);
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+
+.block-img {
+    background-color: rgba(246, 247, 248, 0.603);
+    width: 60%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    margin-left: 20%;
+    margin-top: 1.5rem;
+
+
+}
+
+.img-1,
+.img-2,
+.img-3 {
+
+    margin-left: 10%;
+    height: 400px;
+    width: 600px;
+    transition-property: width, height, transform, background, font-size, opacity;
+    transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover {
+
+    width: 620px;
+    height: 420px;
+
+}
