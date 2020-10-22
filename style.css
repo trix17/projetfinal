@@ -76,6 +76,12 @@
     display: block;
 }
 
+ 
+.w3-contentw3-section {
+    max-width: 100%;
+    margin-top: -150px;
+
+}
 
 
 
