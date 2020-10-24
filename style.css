@@ -85,9 +85,10 @@
     max-width:100%;
     margin-top: -10%;
     margin-left: 10px;
-    opacity: 0.6;
+    opacity: 0.5;
     pointer-events:none;
     border-radius: 15px;
+    
 
 }
 .mySlides{
@@ -144,4 +145,14 @@
     width: 620px;
     height: 420px;
 
+}
+
+.intro-haiti{
+    padding: 10px;
+    margin: 10px;
+}
+
+.haiti-history{
+    margin-top: -200px;
+    
 }
