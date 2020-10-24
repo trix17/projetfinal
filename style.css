@@ -99,10 +99,13 @@
 
 
 .map img {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    height: 350px;
+    /*padding-right: 1rem;
+    padding-left: 1rem;*/
+    /*height: 350px;
     width: 500px;
+    */
+    height: 300px;
+    width: 400px;
 }
 
 .beaches-header {
@@ -118,11 +121,14 @@
 
 
 .block-img {
+    position: relative;
+    right: 80px;
     background-color: rgba(246, 247, 248, 0.603);
-    width: 60%;
+    width: 90%;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     margin-left: 20%;
     margin-top: 1.5rem;
+   
 
 
 }
@@ -132,8 +138,10 @@
 .img-3 {
 
     margin-left: 10%;
-    height: 400px;
-    width: 600px;
+    /*height: 400px;
+    width: 600px;*/
+    height: 250px;
+    width: 380px;
     transition-property: width, height, transform, background, font-size, opacity;
     transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
 }
@@ -142,10 +150,16 @@
 .img-2:hover,
 .img-3:hover {
 
-    width: 620px;
-    height: 420px;
+    /*width: 620px;
+    height: 420px;*/
+    width: 390px;
+    height: 255px;
+    
+    
 
 }
+
+
 
 .intro-haiti{
     padding: 10px;
@@ -155,4 +169,9 @@
 .haiti-history{
     margin-top: -200px;
     
+}
+.main-footer{
+   
+    padding-bottom: 10px;
+    text-align: center
 }
