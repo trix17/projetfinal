@@ -1,7 +1,7 @@
 var myIndex = 0;
-carousel();
+slideshow();
 
-function carousel() {
+function slideshow() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
@@ -10,5 +10,5 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 10000); // Change image every 10 seconds
+  setTimeout(slideshow, 10000); // Change image every 10 seconds
 }
