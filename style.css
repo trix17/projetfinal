@@ -140,14 +140,16 @@ img{
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     margin: 30px;
     margin-top: 1.5rem;
-   
 
-
+}
+.haiti-logo{
+    display: none;
 }
 
 .img-1,
 .img-2,
-.img-3 {
+.img-3,
+.img-4{
 
    
     /*height: 400px;
@@ -216,6 +218,144 @@ img{
     margin-top: -150px;
         
     }
+    
+}
+@media only screen and (min-width: 768px){
+    body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; }
+    
+    
+    .container{
+        padding-top:10px
+        
+    }
+    .bar{
+        display: none;
+    }
+    
+    nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:10vh;
+    background-color:lightblue;/*lightblue color */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+     z-index:10;
+    }
+    
+    .navb {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding-bottom: 21;
+    }
+    
+    .haiti-logo{
+        display: inherit;
+        padding: 40px
+    }
+    
+   a:hover {
+    text-decoration: underline;
+  }
+
+.w3-contentw3-section{
+
+    display: inline;
+}
+
+.main-footer{
+    text-align: center;
+}
+
+.slider-items {
+    display: inline;
+
+}
+
+.w2-center {
+    margin: 90px;
+    text-align: center;
+    width: 100%;
+
+}
+.w3-contentw3-section {
+
+    align-items: center;
+   
+}
+.intro-haiti{
+    display: flex;
+    padding-bottom: 20%;
+    
+
+
+}
+.haiti-history {
+    padding-left:2rem;
+    margin-top: -230px;
+    
+}
+.map img{
+    display: block;
+    width: 80%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: 10%;
+    height: 300px;
+    margin-top: -20%;
+ 
+}
+.beaches-header{
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: rgba(40, 160, 196, 0.37);
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+
+.block-img {
+    background-color: rgba(246, 247, 248, 0.603);
+    width: 60%;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
+    margin-left: 20%;
+    margin-top: 1.5rem;
+    
+
+
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4{
+    
+    margin-left: 10%;
+    height: 400px;
+    width: 600px;
+    transition-property: width,height,transform,background,font-size,opacity;
+    transition-duration: 1s,1s,1s,1s,1s,1s;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4 {
+
+    width: 620px;
+    height:420px;
+
+}
+
     
 }
 
