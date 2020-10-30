@@ -212,14 +212,19 @@ img{
     text-align: center;
 }
 
-@media only screen and (min-width: 578px){
+
+
+
+/* For tablets 
+@media only screen and (min-width: 600px) {
     
-    .haiti-history{
-    margin-top: -150px;
-        
+    
     }
-    
 }
+
+*/
+
+/*for Desktop */
 @media only screen and (min-width: 768px){
     body {
     margin: 0px;
