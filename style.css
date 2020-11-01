@@ -163,7 +163,8 @@ img{
 
 .img-1:hover,
 .img-2:hover,
-.img-3:hover {
+.img-3:hover,
+.img-4{
 
     /*width: 620px;
     height: 420px;*/
@@ -208,10 +209,44 @@ img{
 .main-footer{
    
     /*padding-bottom: 30px;*/
-    padding-top: 20px;
+    margin-top: 20px;
     text-align: center;
+    margin-bottom: 10px;
+}
+.contain{
+    width:80%;
+    
+}
+.card{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 50px;
+    background: skyblue;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    text-align: center;
+    margin-left: 40%;
+}
+.fa fa-refresh,
+.ttext{
+  visibility:hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+ opacity: 0;
+ transition: opacity 1s;
+
 }
 
+
+.fa fa-refresh:hover
+.refresh:hover,
+.ttext{
+    visibility: visible;
+    opacity: 1;
+}
 
 
 
@@ -297,6 +332,7 @@ img{
 .intro-haiti{
     display: flex;
     padding-bottom: 20%;
+    margin-bottom: -7%;
     
 
 
@@ -330,12 +366,14 @@ img{
 
 .block-img {
     background-color: rgba(246, 247, 248, 0.603);
-    width: 95%;
+    width: 90%;
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
-    padding-left: 20px;
+    padding-left: 19px;
     margin-top: 1.5rem;
     display: flex;
-    
+    padding-right: 40px;
+    background-color: ivory;
+
     
     
 
@@ -347,10 +385,10 @@ img{
 .img-3,
 .img-4{
     
-    margin-left: 5%;
-    padding-right: 10%;
+    margin-right: 43px;
+    margin-left: 40px;
     height: 400px;
-    width: 600px;
+    width: 500px;
     transition-property: width,height,transform,background,font-size,opacity;
     transition-duration: 1s,1s,1s,1s,1s,1s;
 }
@@ -362,9 +400,38 @@ img{
 
     width: 620px;
     height:420px;
-
-}
-
     
+
 }
+.contain{
+    width: 10%;
+    
+
+}
+
+.card{
+    border-radius: 50px;
+    background: skyblue;
+    box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
+    padding: 3%;
+    text-align: center;
+}
+.haititemp{
+    display: flex;
+    padding-top: 100px;
+    margin-left: 20px;
+}
+.haititemp,
+    h1{
+        margin-top: -30px
+    }
+
+.haititemp,
+    p{
+        line-height: 1.5; 
+        text-align: left; 
+        margin-left: -200px;
+    }
+}
+.
 
