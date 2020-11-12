@@ -159,6 +159,7 @@ img{
     width: 75%;
     transition-property: width, height, transform, background, font-size, opacity;
     transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+    transform: scale(1.0);
 }
 
 .img-1:hover,
@@ -168,8 +169,7 @@ img{
 
     /*width: 620px;
     height: 420px;*/
-    width: 400px;
-    height: 280px;
+   transform: scale(1.0);
     
     
 
@@ -226,6 +226,8 @@ img{
     text-align: center;
     margin-left: 40%;
 }
+
+
 .fa fa-refresh,
 .ttext{
   visibility:hidden;
@@ -241,8 +243,7 @@ img{
 }
 
 
-.fa fa-refresh:hover
-.refresh:hover,
+.fa fa-refresh:hover,
 .ttext{
     visibility: visible;
     opacity: 1;
@@ -259,6 +260,7 @@ img{
 
 img{
     width: 30px;
+
 }
 
 
@@ -407,7 +409,7 @@ img{
     margin-left: 40px;
     height: 400px;
     width: 500px;
-    transition-property: width,height,transform,background,font-size,opacity;
+    transition-property: width,height;
     transition-duration: 1s,1s,1s,1s,1s,1s;
 }
 
@@ -416,8 +418,9 @@ img{
 .img-3:hover,
 .img-4:hover{
 
-    width: 490px;
-    height:400px;
+    width: 520px;
+    height:420px;
+
     
 
 }
