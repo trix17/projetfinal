@@ -204,10 +204,17 @@ img{
 }
 
 .haiti-history{
-    margin-top: -17rem;
+    margin-top: -12rem;
     margin-left: -24px;
     
 }
+.haiti-history
+p{
+    font-style: italic;
+    margin-top: -2rem;
+    
+}
+
 .main-footer{
    
     /*padding-bottom: 30px;*/
@@ -215,10 +222,7 @@ img{
     text-align: center;
     margin-bottom: 10px;
 }
-.contain{
-    width:80%;
-    
-}
+ 
 .card{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -226,7 +230,8 @@ img{
     background: skyblue;
     box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
     text-align: center;
-    margin-left: 40%;
+    margin-left: 130px;
+    width: 40%;
 }
 
 
@@ -270,24 +275,25 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    /*position: relative;*/
     margin-top: 30px;
     
     
     
 
 }
+form,
 .containers {
     border-radius: 5px;
     background-color: #f2f2f2;
     margin-top: 5;
     width: 70%;
     margin-left: 50px;
-    
     opacity: .8;
     border-radius:20px;
     box-shadow: 1px 1px 10px 5px  grey;
-    padding-bottom: 20%;
+    padding-bottom: 3%;
+    
     
     
   }
@@ -295,22 +301,31 @@ img{
 
 
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
+  width: 90%;
+  padding: 2px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  /*border: 1px solid #ccc;*/
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
+  margin: 10px;
   resize: vertical;
 }
+.label {
+    padding-left: 8px;
+    color: blue;
+  }
 
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -326,9 +341,11 @@ input[type=submit]:hover {
     width: 60%;
     margin-left: 5px;
     opacity: 0.9;
+    border-radius:20px;
 
 
 }
+
 
 
 
@@ -421,8 +438,9 @@ input[type=submit]:hover {
 
 }
 .haiti-history {
-    padding-left:2rem;
-    margin-top: -230px;
+    
+    padding-left: 10px;
+    margin-top: -150px;
     
 }
 .map img{
@@ -445,7 +463,11 @@ input[type=submit]:hover {
     font-weight: 900;
     margin-top: 50px;
 }
-
+.haiti-history
+h1{
+    margin-top: 0px;
+    font-family: Roboto;
+}
 
 .haiti-history 
 p{
@@ -518,7 +540,7 @@ p{
 }
 .haititemp,
     h1{
-        margin-top: -30px;
+        margin-top: -34px;
         margin-left: 15%;
     }
 
