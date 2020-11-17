@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="utf-8">
     <title>My test page</title>
@@ -44,7 +47,7 @@
                 <img class=" mySlides" src="haiti/indigo-beach-006.jpg" style="width:100%">
                 <img class="mySlides" src="haiti/indigo-beach-010.jpg" style="width:100%">
 
-                <h2 class="title">This is Haiti</h2>
+                <!--<h2 class="title">This is Haiti</h2> -->
                 <h3 class="subtitle">The most Beautiful Country</h3>
             </div>
         </div>
@@ -53,7 +56,9 @@
 
     <div class="intro-haiti">
         <div class="haiti-history">
-            <h1 style="padding-bottom: rem;">Haiti History</h1>
+            
+            <h1 style="font-family:Nunito; font-size: 50px; color: red">Haiti History</h1>
+            
             <p>Haiti French: Haïti Haitian Creole: Ayiti,
                 officially the Republic of Haiti (French: <br>République d'Haïti; Haitian Creole: Repiblik d Ayiti)
                 <br>ormerly founded as Hayti, is a country located on the island of Hispaniola in the Greater Antilles
@@ -95,25 +100,26 @@
             <h2 style="text-transform: uppercase; padding-bottom: 10px; text-align: center;">3. Moulin sur Mer </h2>
             <img class="img-3" src="haiti/moulin.jpg">
             <h2 style="text-transform: uppercase; padding-bottom: 10px; text-align: center;">2. WAHOO BAY </h2>
-            <img class="img-4" src="haiti/wahoobay.jpg">
+            <img class="img-4" src="haiti/wahoobay1.jpg">
         </div>
     </div>
 
 
 
     <!-- weather part -->
+    
     <div class="haititemp">
         <h1> Climate - Haiti</h1>
         <p class="lastp">
             The climate of Haiti is tropical, hot throughout the year, with a less hot period from November to March,<br> when the trade winds from the northeast prevail, and a muggy period from May to October,<br> when the heat becomes unpleasant, though along the coasts it is tempered by the breeze.<br> Temperatures are a bit higher in inland plains and on the south-facing coasts, <br>while they are slightly lower along the north-facing coasts.<br>
             As regards to the rainfall, there is usually a dry season from December to February <br>and a rainy season from April to October, with two rainy peaks at the beginning and the end of the period,<br> and a decrease in July.
             From December to March, the north-west cool wind, coming from the United States, <br>can sometimes lower the temperature by a few degrees, bringing the night temperatures a few degrees below 20 °C (68 °F).</p>
-        <div class="contain">
+        <div class="contain"> 
             <div class="card">
                 <h2><i class="fa fa-map-marker"></i><span id="location"></span></h2>
                 <h6 id="weather"></h6>
                 <h4><span id="temp"></span></h4>
-                <img src="" id="icon">
+                <img src="" id="icon"> 
 
                 <button onClick="window.location.reload();" class="refresh">
                     <i class="fa fa-refresh">
@@ -125,29 +131,30 @@
 
         </div>
     </div>
+    </div>
 
     
         <div class="bg-img">
             <form action="/action_page.php" class="containers">
-                <h1>Contact US </h1>
+                <h1 style="margin-top: 1%;  color: blue; text-align: center;">Contact US </h1>
             
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="fname"><b  style="color: blue;">First Name</b></label>
+                <input type="text" id="fname" name="firstname" placeholder="Type name..">
             
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">   
+                <label for="lname"><b  style="color: blue;">Last Name</b></label>
+                <input type="text" id="lname" name="lastname" placeholder="Type last name..">   
                 
-                <label for="email"><b>Email</b></label>
+                <label for="email"><b style="color: blue;">Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
 
-                <label for="country">Country</label>
+                <label for="country"><b  style="color: blue;">Country</b></label>
                 <select id="country" name="country">
                     <option value="haiti">Haiti</option>
                     <option value="jamaica">Jamaica</option>
                     <option value="usa">USA</option>
                 </select>
 
-                <label for="subject">Subject</label>
+                <label for="subject"><b  style="color: blue;">Subject</b></label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
                 <button type="submit" class="btn">Submit</button>
