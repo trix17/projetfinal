@@ -265,11 +265,13 @@ img{
 }
 .bg-img{
     background-color: lightblue;
+    background-image: url(haiti/palm-trees.jpg);
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-top: 30px;
     
     
     
@@ -278,8 +280,14 @@ img{
 .containers {
     border-radius: 5px;
     background-color: #f2f2f2;
-    max-width: 300px;
+    margin-top: 5;
+    width: 70%;
+    margin-left: 50px;
+    
     opacity: .8;
+    border-radius:20px;
+    box-shadow: 1px 1px 10px 5px  grey;
+    padding-bottom: 20%;
     
     
   }
@@ -309,10 +317,18 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    margin-left: 5px;
+    opacity: 0.9;
 
 
-
-
+}
 
 
 
@@ -521,7 +537,7 @@ p{
     display:flex;
     justify-content:center;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: px;
     
    
 
@@ -534,10 +550,8 @@ p{
     padding: 16px;
     
     
-    
-
-    
 }
+
 
 }
 
