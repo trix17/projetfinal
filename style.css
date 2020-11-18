@@ -136,7 +136,7 @@ img{
     display: block;
     width:100%;
     background-color: rgba(246, 247, 248, 0.603);
-    width: 90%;
+   
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     margin: 16px;
     margin-top: 1.5rem;
@@ -350,14 +350,41 @@ input[type=submit]:hover {
 
 
 
-/* For tablets 
-@media only screen and (min-width: 600px) {
+/* For tablets */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+
+.
+    {   
+        display: block;
+        width: 100%;
+    }
+
+
     
+    .container1,
+    
+    
+    {
+        float: left;
+        
+    
+        
+    }
+
+    
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    width: 100%;
+    
+}
+   
     
     }
-}
 
-*/
+
+
 
 /*for Desktop */
 @media only screen and (min-width: 768px){
@@ -499,8 +526,8 @@ p{
     
     margin-right: 43px;
     margin-left: 40px;
-    height: 400px;
-    width: 500px;
+    height: 250px;
+    width: 300px;
     transition-property: width,height;
     transition-duration: 1s,1s,1s,1s,1s,1s;
 }
@@ -510,8 +537,8 @@ p{
 .img-3:hover,
 .img-4:hover{
 
-    width: 520px;
-    height:420px;
+    width: 320px;
+    height:300px;
 
     
 
