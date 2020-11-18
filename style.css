@@ -490,10 +490,6 @@ p{
     padding-right: 40px;
     background-color: ivory;
 
-    
-    
-
-
 }
 
 .img-1,
@@ -530,8 +526,9 @@ p{
     border-radius: 50px;
     background: skyblue;
     box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
-    padding: 3%;
+    padding: 4%;
     text-align: center;
+    width: 70%;
 }
 .haititemp{
     display: flex;
@@ -573,7 +570,10 @@ p{
     
     
 }
-
+.containers
+h1{
+    padding-right: 50px;
+}
 
 }
 
