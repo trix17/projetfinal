@@ -131,51 +131,41 @@ img{
 }
 
 
-.block-img {
-    position: relative;
-    display: block;
-    width:100%;
-    background-color: rgba(246, 247, 248, 0.603);
+.block-img{
    
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    margin: 16px;
-    margin-top: 1.5rem;
+     display: flex;
+      /* ALlow images to display on multiple lines rather than a single line */
+      flex-wrap: wrap;
+      /* Container should take up only 90% of the browser, leave 5% space on each side */
+      width: 100%;
+      /* Center container */
+      margin:0;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
 
 }
+ .grid-image{/* images display inline by default and act like text. We want them to act like divs, so display block */
+ display: block;
+ /* our width setting for mobile, one image per line */
+ flex-basis: 100%;
+ /* provide some space between our images */
+ padding: 10px;
+ /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+ box-sizing: border-box;
+
+ 
+ 
+ }
+
+
+
+
 .haiti-logo{
     display: none;
 }
 
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
 
-   
-    /*height: 400px;
-    width: 600px;*/
-    margin: 40px;
-    display: block;
-    width: 75%;
-    padding-bottom: 20px;
-    transition-property: width, height, transform, background, font-size, opacity;
-    transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
-    transform: scale(1.0);
-}
 
-.img-1:hover,
-.img-2:hover,
-.img-3:hover,
-.img-4:hover {
-
-    /*width: 620px;
-    height: 420px;*/
-   transform: scale(1.0);
-    
-    
-
-}
-.title{
+/*.title{
     position: relative; 
     top:-200px; 
     text-align: center; 
@@ -194,7 +184,7 @@ img{
     text-align: center;
     font-family: Times New Roman, Times, serif; 
     text-transform: uppercase;
-}
+}*/
 
 .intro-haiti{
     padding: 10px;
@@ -213,6 +203,17 @@ p{
     font-style: italic;
     margin-top: -2rem;
     
+}
+
+.beaches-header
+ul
+a
+{
+    float: left;
+    font-weight: 10;
+    text-decoration: none;
+    color: red;
+   
 }
 
 .main-footer{
@@ -277,11 +278,11 @@ img{
     background-size: cover;
     /*position: relative;*/
     margin-top: 30px;
-    
-    
-    
-
 }
+
+
+
+
 form,
 .containers {
     border-radius: 5px;
@@ -353,23 +354,9 @@ input[type=submit]:hover {
 /* For tablets */
 @media screen and (min-width: 600px) and (max-width: 767px) {
 
-.
-    {   
-        display: block;
-        width: 100%;
-    }
-
-
-    
-    .container1,
-    
-    
-    {
-        float: left;
-        
-    
-        
-    }
+    .grid-image {
+        flex-basis: 50%;
+      }
 
     
 .img-1,
@@ -507,38 +494,10 @@ p{
 
 
 
-.block-img {
-    background-color: rgba(246, 247, 248, 0.603);
-    width: 90%;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,0.25);
-    padding-left: 19px;
-    margin-top: 1.5rem;
-    display: flex;
-    padding-right: 40px;
-    background-color: ivory;
+ .grid-image {
+    flex-basis: 25%;
+  }
 
-}
-
-.img-1,
-.img-2,
-.img-3,
-.img-4{
-    
-    margin-right: 43px;
-    margin-left: 40px;
-    height: 250px;
-    width: 300px;
-    transition-property: width,height;
-    transition-duration: 1s,1s,1s,1s,1s,1s;
-}
-
-.img-1:hover,
-.img-2:hover,
-.img-3:hover,
-.img-4:hover{
-
-    width: 320px;
-    height:300px;
 
     
 
@@ -602,6 +561,6 @@ h1{
     padding-right: 50px;
 }
 
-}
+
 
 
