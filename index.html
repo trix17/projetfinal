@@ -27,7 +27,7 @@
             <ul class="navb" id="navb">
                 <li><a href="#">Home</a></li>
                 <li><a href="./places.html">Places</a></li>
-                <li><a href="#">beaches</a></li>
+                <li><a href="#3">beaches</a></li>
             </ul>
         </nav>
     </div>
@@ -57,7 +57,7 @@
     <div class="intro-haiti">
         <div class="haiti-history">
             
-            <h1 style="font-family:Nunito; font-size: 50px; color: red">Haiti History</h1>
+            <h1 style="font-family:Nunito; font-size: 40px; color: red">Haiti History</h1>
             
             <p>Haiti French: Haïti Haitian Creole: Ayiti,
                 officially the Republic of Haiti (French: <br>République d'Haïti; Haitian Creole: Repiblik d Ayiti)
@@ -105,10 +105,10 @@
     
             <img id = "2"class="grid-image" src="haiti/62696133.jpg">
         
-            <img id = "3"class="grid-image" src="haiti/port salut.jpg">
+            <img id = "3"class="grid-image" src="haiti/dan-s-creek-hotel.jpg">
             <img id = "7" class="grid-image" src="haiti/Kokoye Beach.jpg">
             
-            <img id ="4" class="grid-image" src="haiti/moulin.jpg" id="4">
+            <img id ="4" class="grid-image" src="haiti/moulin.jpg">
             
             <img id = "5" class="grid-image" src="haiti/wahoobay1.jpg">
 
@@ -122,14 +122,16 @@
 
 
     <!-- weather part -->
-    
-    <div class="haititemp">
-        <h1> Climate - Haiti</h1>
+       <div class= "kontene">
+        <div class="haititemp">
+        <h1 style="color : red; margin: 10px;font-family:Nunito;"> Climate - Haiti</h1>
         <p class="lastp">
             The climate of Haiti is tropical, hot throughout the year, with a less hot period from November to March,<br> when the trade winds from the northeast prevail, and a muggy period from May to October,<br> when the heat becomes unpleasant, though along the coasts it is tempered by the breeze.<br> Temperatures are a bit higher in inland plains and on the south-facing coasts, <br>while they are slightly lower along the north-facing coasts.<br>
             As regards to the rainfall, there is usually a dry season from December to February <br>and a rainy season from April to October, with two rainy peaks at the beginning and the end of the period,<br> and a decrease in July.
             From December to March, the north-west cool wind, coming from the United States, <br>can sometimes lower the temperature by a few degrees, bringing the night temperatures a few degrees below 20 °C (68 °F).</p>
-        <div class="contain"> 
+        </div>
+
+        
             <div class="card">
                 <h2><i class="fa fa-map-marker"></i><span id="location"></span></h2>
                 <h6 id="weather"></h6>
@@ -141,17 +143,17 @@
                         <span class="ttext">Click to Refresh</span></i>
                 </button>
             </div>
+       </div>
 
 
-
-        </div>
-    </div>
-    </div>
+        
+    
+    
 
     
         <div class="bg-img">
-            <form action="/action_page.php" class="containers">
-                <h1 style="margin-top: 1%;  color: blue; text-align: center;">Contact US </h1>
+            <form id= "messageForm"  class="containers">
+                <h1 style="margin-top: 1%;  color: blue; text-align: center;"> MESSAGE ME </h1>
             
                 <label for="fname"><b  style="color: blue;">First Name</b></label>
                 <input type="text" id="fname" name="firstname" placeholder="Type name..">
@@ -160,19 +162,22 @@
                 <input type="text" id="lname" name="lastname" placeholder="Type last name..">   
                 
                 <label for="email"><b style="color: blue;">Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" id="emailField" placeholder="Enter Email" name="email" required>
 
                 <label for="country"><b  style="color: blue;">Country</b></label>
                 <select id="country" name="country">
                     <option value="haiti">Haiti</option>
                     <option value="jamaica">Jamaica</option>
                     <option value="usa">USA</option>
+                    <option value="usa">Bahamas</option>
+                    <option value="usa">Nigeria</option>
+                    <option value="usa">Kenya</option>
                 </select>
 
-                <label for="subject"><b  style="color: blue;">Subject</b></label>
+                <label for="subject"><b style="color: blue;">Subject</b></label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-                <button type="submit" class="btn">Submit</button>
+                <button id="oksubmit" type="submit" class="btn">Submit</button>
             </form>
           </div>
           
@@ -186,7 +191,7 @@
     <script src="script.js"></script>
     <script src="myjavascript.js"></script>
     <script src="jv.js"></script>
-    <script src="history.js"></script>
+    <script src="validation.js"></script>
 
     <footer class="main-footer">
 
