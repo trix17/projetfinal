@@ -87,7 +87,6 @@ body {
  
 .w3-contentw3-section {
     max-width:100%;
-    /*margin-top: 10%;*/
     margin-left: px;
     opacity: 0.5;
     pointer-events:none;
@@ -110,11 +109,7 @@ img{
 
 
 .map img {
-    /*padding-right: 1rem;
-    padding-left: 1rem;*/
-    /*height: 350px;
-    width: 500px;
-    */
+    
     display: block;
     width: 100%;
 }
@@ -133,26 +128,20 @@ img{
 
 .block-img{
    
-     display: flex;
-      /* ALlow images to display on multiple lines rather than a single line */
-      flex-wrap: wrap;
-      /* Container should take up only 90% of the browser, leave 5% space on each side */
-      width: 100%;
-      /* Center container */
-      margin:0;
-      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+    margin-left:15px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.76);
 
 }
- .grid-image{/* images display inline by default and act like text. We want them to act like divs, so display block */
+ .grid-image{
  display: block;
- /* our width setting for mobile, one image per line */
  flex-basis: 100%;
- /* provide some space between our images */
- padding: 10px;
- /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
- box-sizing: border-box;
 
- 
+ padding: 11px;
+ box-sizing: border-box;
  
  }
 
@@ -164,27 +153,6 @@ img{
 }
 
 
-
-/*.title{
-    position: relative; 
-    top:-200px; 
-    text-align: center; 
-    font-size: 25px; 
-    color: azure;
-    font-family: serif ; 
-    font-style: italic;
-}
-.subtitle{
-    position: absolute; 
-    top:100px; 
-    font-size:25px;
-    display: none;
-    
-    color:white;
-    text-align: center;
-    font-family: Times New Roman, Times, serif; 
-    text-transform: uppercase;
-}*/
 
 .intro-haiti{
     padding: 10px;
@@ -198,12 +166,17 @@ img{
     margin-left: -24px;
     
 }
-.haiti-history
+.haiti-history,
 p{
     font-style: italic;
-    margin-top: -2rem;
     
 }
+
+.haititemp{
+    margin-top: 25px
+}
+
+
 
 .beaches-header
 ul
@@ -215,6 +188,12 @@ a
     color: red;
    
 }
+.kontene{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .main-footer{
    
@@ -231,8 +210,10 @@ a
     background: skyblue;
     box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
     text-align: center;
-    margin-left: 130px;
-    width: 40%;
+    margin-left: 40%;
+    width: 30%;
+    height: 150px;
+    
 }
 
 
@@ -257,11 +238,10 @@ a
     opacity: 1;
 }
 
-.lastp,
-    p{
-
-        margin-left: 1.5%;
+.lastp
+    {
     text-align: left;
+    margin: 10px;
 
     }
 
@@ -269,6 +249,7 @@ a
 img{
     width: 30px;
 }
+
 .bg-img{
     background-color: lightblue;
     background-image: url(haiti/palm-trees.jpg);
@@ -276,7 +257,6 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*position: relative;*/
     margin-top: 30px;
 }
 
@@ -308,7 +288,6 @@ input[type=text], select, textarea {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  /*border: 1px solid #ccc;*/
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -351,23 +330,25 @@ input[type=submit]:hover {
 
 
 
-/* For tablets */
+
 @media screen and (min-width: 600px) and (max-width: 767px) {
 
     .grid-image {
         flex-basis: 50%;
       }
 
-    
-.img-1,
-.img-2,
-.img-3,
-.img-4 {
-    width: 100%;
-    
+
+      .card:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+      }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
 }
-   
-    
+
     }
 
 
@@ -491,7 +472,10 @@ p{
 
 
 }
-
+.block-img{
+    padding-left: 3x;
+    margin-left: 40px; 
+}
 
 
  .grid-image {
@@ -499,40 +483,43 @@ p{
   }
 
 
-    
-
-}
-.contain{
-    width: 10%;
-    
-
-}
-
 .card{
+    height: 200px;
     border-radius: 50px;
     background: skyblue;
     box-shadow: 5px 5px 10px #191b1b, -5px -5px 10px #595959;
     padding: 4%;
+    margin-right: 100px;
+    margin-top:10%;
+
     text-align: center;
-    width: 70%;
+    width: 10%;
 }
-.haititemp{
-    display: flex;
-    padding-top: 100px;
+.card:hover{
     
+    
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+      }
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
 }
+
 .haititemp,
     h1{
-        margin-top: -34px;
-        margin-left: 15%;
+        margin-top: 34px;
+        margin-left: 10px
+        
+        
     }
 
+.lastp
+{
 
-
-.lastp,
-p{
-
-    margin-left: -45%;
+    margin-left: 10px;
     text-align: left;
 
     }
@@ -543,10 +530,10 @@ p{
     justify-content:center;
     padding-bottom: 40px;
     padding-top: px;
-    
+}    
    
 
-}
+
 .containers{
     width: 400px;
     right: 0;
@@ -561,6 +548,10 @@ h1{
     padding-right: 50px;
 }
 
+.kontene{
+    flex-direction: row;
+}
 
 
 
+}
