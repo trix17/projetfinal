@@ -91,67 +91,67 @@ body {
       <img src="haiti/Sans Souci palace.jpg"style="width: 100%;">
       <img src="haiti/vertieres.jpg"style="width: 100%;">
       <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
+      <img src="haiti/image1.jpg"style="width: 100%;">
 
     </div>
     <div class="column">
       <img src="haiti/maison.jpg"style="width: 100%;">
       <img src="haiti/sans-souci_palace.jpg"style="width: 100%;">
       <img src="haiti/hotel-cyvadier.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
+      <img src="haiti/image2.jpg"style="width: 100%;">
+      <img src="haiti/image3.jpg"style="width: 100%;">
+      <img src="haiti/image4.jpg"style="width: 100%;">
     </div>
     <div class="column">
       <img src="haiti/sodo.jpg"style="width: 100%;">
       <img src="haiti/Cathedral_of_Cap-Haitien.jpg"style="width: 100%;">
       <img src="haiti/neg.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
+      <img src="haiti/image5.jpg"style="width: 100%;">
+      <img src="haiti/image6.jpg"style="width: 100%;">
+      <img src="haiti/image10.jpg"style="width: 100%;">
    
     </div>
     <div class="column">
       <img src="haiti/haitiwhite.jpg"style="width: 100%;">
       <img src="haiti/kokoye-beach-tyler-welsh_hero.jpg"style="width: 100%;">
       <img src="haiti/help-poor-in-haiti-recreation-566px.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
-      <img src="haiti/citadelle.jpg"style="width: 100%;">
+      <img src="haiti/image7.jpg" style="width: 100%;">
+      <img src="haiti/image8.jpg"style="width: 100%;">
+      <img src="haiti/image9.jpg"style="width: 100%;">
 
     </div>
   </div>
   <script>
-    // Get the elements with class="column"
+    
     var elements = document.getElementsByClassName("column");
     
-    // Declare a loop variable
+    
     var i;
     
-    // Full-width images
+    // one image , take the whole width
     function one() {
         for (i = 0; i < elements.length; i++) {
-        elements[i].style.msFlex = "100%";  // IE10
+        elements[i].style.msFlex = "100%";  // IE
         elements[i].style.flex = "100%";
       }
     } 
-  // Two images side by side
+  // Two images 
 function two() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.msFlex = "50%";  // IE
     elements[i].style.flex = "50%";
   }
 }
 
-// Four images side by side
+// 4 images
 function four() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.msFlex = "25%";  // IE
     elements[i].style.flex = "25%";
   }
 }
 
-// Add active class to the current button (highlight it)
+// Highlit the button in use 
 var header = document.getElementById("myHeader");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
